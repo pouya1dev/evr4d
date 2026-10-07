@@ -1,0 +1,14 @@
+{
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"authors": [
+		"Pouya Mohammadi"
+	],
+	"copyright": "Copyright © 2026, Pouya Mohammadi",
+	"name": "test",
+	"dependencies": {
+		"evr4d": {
+			"path": "../../evr4d"
+		}
+	}
+}

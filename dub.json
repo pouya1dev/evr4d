@@ -1,0 +1,18 @@
+{
+	"description": "Run Ever Code from your D program.",
+	"license": "GPL-3.0-only",
+	"authors": [
+		"Pouya Mohammadi"
+	],
+	"copyright": "Copyright © 2026, Pouya Mohammadi",
+	"libs": [
+		"axiom"
+	],
+	"name": "evr4d",
+	"targetType": "library",
+	"dependencies": {
+        "axiom": {
+            "path": "./axiom/"
+        }
+    }
+}
