@@ -19,6 +19,7 @@ Just follow the example [here](test):
 		}
 	}
   ```
+
 	And like a test, use this library as follows:
 	```
 	import std.stdio;
