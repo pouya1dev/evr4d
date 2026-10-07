@@ -1,34 +1,35 @@
 # evr4d
+
 Run Ever source code from your D program.
 
+To execute Ever code within your D application, you can use **Ever4D**, which provides the following API:
 
-To execute Ever code within your D application, you can use Ever4D, which simply provides you with the following API:
-| function name | syntex               | work                                                                 |
-|---------------|----------------------|----------------------------------------------------------------------|
-| `ever`        | `ever(string code);` | its run your string that it have evercode, `code` and run it result. |
+| Function name | Syntax | Description |
+|---|---|---|
+| `ever` | `ever(string code);` | Runs the given string as Ever code. |
 
-# Using in a D program
-Just follow the example [here](test): 
+## Using in a D program
 
-  first, download the source file from this repository, place it next to your application's source code, and add this to your code:
-  
-  `
-  "dependencies": {
-		"evr4d": {
-			"path": "evr4d"
-		}
-	}
-  `
+Follow the example [here](test).
 
-	And like a test, use this library as follows:
+First, download the source code from this repository, place it next to your application's source code, and add the following dependency to your `dub.json`:
 
-	
-	```
-	import std.stdio;
-	import evr4d;
+```json
+"dependencies": {
+    "evr4d": {
+        "path": "evr4d"
+    }
+}
+```
 
-	void main()
-	{
-		ever("def:write \"Hello world!\"");
-	}
-	```
+Then use the library like this:
+
+```d
+import std.stdio;
+import evr4d;
+
+void main()
+{
+    ever("def:write \"Hello world!\"");
+}
+```
